@@ -1,0 +1,26 @@
+from random import randint
+import sys
+
+first = int(input('min number: '))
+last = int(input('max number: '))
+
+answer = randint(first, last)
+
+while True:
+    try:
+        # print(answer)
+        guess = int(input(f'guess a number {first}-{last}: '))
+        if first <= guess <= last:
+            if guess == answer:
+                print('you got the number!')
+                break
+        else:
+            print(f'please enter a number between {first}-{last}')
+
+    except ValueError:
+        print('please enter a number')
+        continue
+
+
+
+
