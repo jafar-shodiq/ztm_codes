@@ -1,7 +1,7 @@
 import PyPDF2
 
-template = PyPDF2.PdfFileReader(open('combined-pdf.pdf', mode='rb'))
-watermark = PyPDF2.PdfFileReader(open('wtr.pdf', 'rb'))
+template = PyPDF2.PdfFileReader(open('your_pdf.pdf', mode='rb')) #read binary
+watermark = PyPDF2.PdfFileReader(open('watermark_pdf.pdf', 'rb'))
 output = PyPDF2.PdfFileWriter()
 
 for i in range(template.getNumPages()):
