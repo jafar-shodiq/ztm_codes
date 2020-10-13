@@ -1,5 +1,4 @@
 from random import randint
-import sys
 
 first = int(input('min number: '))
 last = int(input('max number: '))
