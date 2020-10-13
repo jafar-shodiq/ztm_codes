@@ -7,7 +7,6 @@ answer = randint(first, last)
 
 while True:
     try:
-        # print(answer)
         guess = int(input(f'guess a number {first}-{last}: '))
         if first <= guess <= last:
             if guess == answer:
